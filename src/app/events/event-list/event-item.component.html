@@ -1,0 +1,15 @@
+
+<div style="float: top; overflow: hidden" class="list-group-item clearfix">
+  <div class="info" style="width: 200px; float: left; overflow: hidden">
+    <h4 class="list-group-item-heading">{{event.name}}</h4>
+    <p class="list-group-item-text">{{event.description}}</p>
+    <a [routerLink]="[event.routerURL]">Click for More</a>
+  </div>
+  <div class="picture"style=" float: left; overflow: hidden">
+    <img class="img-responsive"
+         src="{{event.imagePath}}"
+         style="max-height: 250px;"/>
+  </div>
+
+</div>
+

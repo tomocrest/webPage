@@ -1,0 +1,13 @@
+
+<div class="list-group-item clearfix" style="float: top; overflow: hidden">
+  <div class="info" style="width: 200px; float: left; overflow: hidden">
+    <h4 class="list-group-item-heading">{{vacation.name}}</h4>
+    <p class="list-group-item-text">{{vacation.description}}</p>
+    <a [routerLink]="[vacation.routerPath]">Click for More</a>
+  </div>
+  <div class="picture"style=" float: left; overflow: hidden">
+    <img class="img-responsive"
+         src="{{vacation.imagePath}}"
+         style="max-height: 175px;"/>
+  </div>
+</div>

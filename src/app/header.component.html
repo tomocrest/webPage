@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333333;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 16px;
+      text-decoration: none;
+    }
+
+    li a:hover {
+      background-color: #111111;
+    }
+  </style>
+</head>
+<body>
+<ul>
+  <!--<li><a href="members">Members</a></li>-->
+  <li><a href="home">Home</a></li>
+  <li><a href="vacations">Leagues</a></li>
+  <!--<li><a href="events">Events</a></li>-->
+  <li><a href="photos">Photos</a></li>
+  <li><a href="videos">Videos</a></li>
+  <li><a [routerLink]="['signin']">Login</a></li>
+  <li><a (click)="onLogout()" style="cursor: pointer;">Logout</a></li>
+</ul>
+</body>
+</html>

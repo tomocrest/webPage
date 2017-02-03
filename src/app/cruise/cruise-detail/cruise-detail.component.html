@@ -1,0 +1,20 @@
+<div class="row">
+  <div class="col-xs-12">
+    <img src="{{selectedCruise?.imagePath}}" alt="" class="img-responsive">
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedCruise?.name}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary" *ngIf="isAuth()" (click)="onEdit()">Edit</button>
+    <button class="btn btn-danger" *ngIf="isAuth()" (click)="onDelete()">Delete</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{selectedCruise?.description}}</p>
+  </div>
+</div>

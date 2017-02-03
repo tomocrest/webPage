@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="col-xs-12">
+    <!--object data="{{selectedVideo?.imagePath}}" width="420" height="315">
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/embed/zhEoC5NtaPY?autoplay=1">
+  </iframe-->
+
+</div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <h1>{{selectedVideo?.name}}</h1>
+  </div>
+  <div class="col-xs-12">
+    <button class="btn btn-primary" *ngIf="isAuth()" (click)="onEdit()">Edit</button>
+    <button class="btn btn-danger" *ngIf="isAuth()" (click)="onDelete()">Delete</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <p>{{selectedVideo?.description}}</p>
+  </div>
+</div>

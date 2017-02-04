@@ -1,10 +1,10 @@
-import { TomoPagePage } from './app.po';
+import { PracticeAppPage } from './app.po';
 
-describe('tomo-page App', function() {
-  let page: TomoPagePage;
+describe('practice-app App', function() {
+  let page: PracticeAppPage;
 
   beforeEach(() => {
-    page = new TomoPagePage();
+    page = new PracticeAppPage();
   });
 
   it('should display message saying app works', () => {
